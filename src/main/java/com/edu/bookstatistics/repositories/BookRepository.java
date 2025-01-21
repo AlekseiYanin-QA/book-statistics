@@ -1,4 +1,7 @@
 package com.edu.bookstatistics.repositories;
 
-public class BookRepository {
+import com.edu.bookstatistics.entities.Book;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface BookRepository extends JpaRepository<Book, Long> {
 }
